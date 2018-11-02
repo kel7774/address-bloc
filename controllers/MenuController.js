@@ -55,6 +55,6 @@ module.exports = class MenuController {
     }
 
     remindMe(){
-        console.log("Learning is a life-long pursuit.");
+       return "Learning is a life-long pursuit.";
     }
 }
