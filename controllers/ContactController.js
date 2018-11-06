@@ -63,10 +63,6 @@ module.exports = class ContactController {
     }
 
     getContacts(){
-<<<<<<< HEAD
-        return Contact.findAll()
-      }
-=======
         return Contact.findAll();
     }
 
@@ -110,5 +106,4 @@ module.exports = class ContactController {
             where: {id}
         })
     }
->>>>>>> Add methods to delete, show contact
 }
