@@ -59,18 +59,14 @@ module.exports = class ContactController {
         ];
     }
     addContact(name, phone, email) {
-       return Contact.create({name, phone, email});
-    }
+        return Contact.create({name, phone, email});
+     }
 
-    getContacts(){
-<<<<<<< HEAD
+     getContacts(){
         return Contact.findAll()
-      }
-=======
-        return Contact.findAll();
-    }
+     }
 
-    iterativeSearch(contacts, target){
+     iterativeSearch(contacts, target){
         for(let contact of contacts){
             if(contact.name.toLowerCase() === target.toLowerCase()){
                 return contact;
@@ -105,10 +101,9 @@ module.exports = class ContactController {
         });
     }
 
-    delete(id){
+    delete(id) {
         return Contact.destroy({
             where: {id}
-        })
+        });
     }
->>>>>>> Add methods to delete, show contact
 }
