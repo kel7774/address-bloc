@@ -3,12 +3,12 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.addColumn(
-      'Contacts', 'addEmail',
+      'Contacts', 'email',
       Sequelize.STRING
     )
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.removeColumn('Contacts', 'addEmail');
+    return queryInterface.removeColumn('Contacts', 'email');
   }
 };
