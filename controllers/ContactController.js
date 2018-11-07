@@ -62,15 +62,10 @@ module.exports = class ContactController {
         return Contact.create({name, phone, email});
      }
 
-<<<<<<< HEAD
     getContacts(){
         return Contact.findAll();
     }
-=======
-     getContacts(){
-        return Contact.findAll()
-     }
->>>>>>> list-contacts
+    
 
      iterativeSearch(contacts, target){
         for(let contact of contacts){
